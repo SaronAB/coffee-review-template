@@ -1,0 +1,13 @@
+[
+ {
+    "name": "Jimmy's Special Coffee",
+    "rating": "10",
+    "comment": "If I could rate it higher, I would!",
+    "reviewer": "Justin Case"
+},
+{
+    "rating": "10",
+    "comment": "He does it again!",
+    "reviewer": "Eileen Dover"
+}
+]

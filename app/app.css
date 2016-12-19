@@ -1,0 +1,47 @@
+/* app css stylesheet */
+table{
+  width: 100%;
+}
+
+.title {
+  margin: auto;
+  right: 50%;
+  left:50%;
+}
+
+th{
+  text-align: center;
+  background-color: #cc9900;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #d9d9d9;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: .5em;
+  padding: 0.5em 0.5em 0.5em;
+  background-color: black;
+}
+
+.wrap{
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.coffeePic {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.coffeeLove{
+  margin: auto;
+  width: 25%;
+}

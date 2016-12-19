@@ -1,0 +1,28 @@
+<p>
+  Search:
+  <input ng-model="query">
+</p>
+
+<p>
+Sort by:
+  <select ng-model="orderProp">
+    <option value="name">Alphabetical by Name</option>
+    <option value="brand">Alphabetical by Brand</option>
+    <option value="country">Alphabetical by Country</option>
+  </select>
+</p>
+<b><div style="text-align: center;">Coffees</div></b>
+<table>
+  <tr>
+ 	<b><th>Review &nbsp;&nbsp;</th><th>Brand &nbsp;&nbsp;</th><th>Name &nbsp;&nbsp;</th><th>Country &nbsp;&nbsp;</th></b>
+ </tr>
+  <tr ng-repeat="coffee in coffees | filter: query | orderBy: orderProp">
+    <td><a href="#!/reviewsjson/{{coffee.id}}/{{coffee.brand}}">Reviews</a>&nbsp;&nbsp;</td>
+    <td>{{coffee.brand}}&nbsp;&nbsp;</td>
+    <td>{{coffee.name}}&nbsp;&nbsp;</td>
+    <td>{{coffee.country}}&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+
+<div class="wrap"><div class="coffeePic"> <img src="coffeeCollage.jpg"></div></div>
